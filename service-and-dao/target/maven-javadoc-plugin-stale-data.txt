@@ -1,0 +1,71 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/ISAVU1/.m2/repository/mysql/mysql-connector-java/8.0.25/mysql-connector-java-8.0.25.jar;C:/Users/ISAVU1/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar;C:/Users/ISAVU1/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar;C:/Users/ISAVU1/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java;C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'service-and-dao 0.0.1-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'service-and-dao 0.0.1-SNAPSHOT API'
+com.stefanini.taskmanager.dao
+com.stefanini.taskmanager.dao.task
+com.stefanini.taskmanager.dao.user
+com.stefanini.taskmanager.dto
+com.stefanini.taskmanager.service
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/ConnectionUtil.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/DAOTaskFactory.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/DAOUserFactory.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/task/DBTaskDAO.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/task/FileTaskDAO.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/TaskDAO.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/user/DBUserDAO.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/user/FileUserDAO.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dao/UserDAO.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dto/Task.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/dto/User.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/service/ApplicationProperties.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/service/ServiceFactory.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/service/TaskService.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/service/TaskServiceImpl.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/service/UserService.java'
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/src/main/java/com/stefanini/taskmanager/service/UserServiceImpl.java'
+C:\Users\ISAVU1\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar = 1622646451343
+C:\Users\ISAVU1\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar = 1622646451357
+C:\Users\ISAVU1\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar = 1623079934851
+C:\Users\ISAVU1\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar = 1623079935087
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\src\main\java = 1622645990313
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\generated-sources\annotations = 1623229954229
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\allclasses-frame.html = 1623229961196
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\allclasses-noframe.html = 1623229961199
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\constant-values.html = 1623229961060
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\deprecated-list.html = 1623229961193
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\help-doc.html = 1623229961206
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\index-all.html = 1623229961190
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\index.html = 1623229961201
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\overview-frame.html = 1623229961016
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\overview-summary.html = 1623229961204
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\overview-tree.html = 1623229961182
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\package-list = 1623229961013
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\script.js = 1623229961209
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\serialized-form.html = 1623229961068
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\site\apidocs\stylesheet.css = 1623229842986

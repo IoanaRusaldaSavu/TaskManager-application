@@ -1,0 +1,5 @@
+com.stefanini.taskmanager.dao
+com.stefanini.taskmanager.dao.task
+com.stefanini.taskmanager.dao.user
+com.stefanini.taskmanager.dto
+com.stefanini.taskmanager.service

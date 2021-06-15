@@ -1,0 +1,51 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/target/service-and-dao-0.0.1-SNAPSHOT.jar;C:/Users/ISAVU1/.m2/repository/mysql/mysql-connector-java/8.0.25/mysql-connector-java-8.0.25.jar;C:/Users/ISAVU1/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar;C:/Users/ISAVU1/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar;C:/Users/ISAVU1/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/Users/ISAVU1/Desktop/taskmanager/client/src/main/java;C:/Users/ISAVU1/Desktop/taskmanager/client/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/ISAVU1/Desktop/taskmanager/client/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'client 0.0.1-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/ISAVU1/Desktop/taskmanager/client/target/javadoc-bundle-options'
+-linkoffline
+'http://www.example.com/apidocs' 'C:/Users/ISAVU1/Desktop/taskmanager/service-and-dao/target/site/apidocs'
+-use
+-version
+-windowtitle
+'client 0.0.1-SNAPSHOT API'
+com.stefanini.taskmanager
+'C:/Users/ISAVU1/Desktop/taskmanager/client/src/main/java/com/stefanini/taskmanager/Main.java'
+C:\Users\ISAVU1\Desktop\taskmanager\service-and-dao\target\service-and-dao-0.0.1-SNAPSHOT.jar = 1623229959381
+C:\Users\ISAVU1\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar = 1622646451343
+C:\Users\ISAVU1\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar = 1622646451357
+C:\Users\ISAVU1\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar = 1623079934851
+C:\Users\ISAVU1\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar = 1623079935087
+C:\Users\ISAVU1\Desktop\taskmanager\client\src\main\java = 1622646095040
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\generated-sources\annotations = 1623229961534
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\allclasses-frame.html = 1623229962551
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\allclasses-noframe.html = 1623229962553
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\constant-values.html = 1623229962527
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\deprecated-list.html = 1623229962549
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\help-doc.html = 1623229962559
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\index-all.html = 1623229962546
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\index.html = 1623229962555
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\overview-tree.html = 1623229962542
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\package-list = 1623229962509
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\script.js = 1623229962563
+C:\Users\ISAVU1\Desktop\taskmanager\client\target\site\apidocs\stylesheet.css = 1623229962561

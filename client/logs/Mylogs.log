@@ -1,0 +1,157 @@
+[WARN ] 2021-06-07 18:57:52.717 [main] UserServiceImpl - An error or userName alreadyUsed
+[INFO ] 2021-06-09 11:02:27.717 [main] ServiceFactory - TaskService instantiation
+[INFO ] 2021-06-09 11:02:28.074 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-09 11:02:28.077 [main] ServiceFactory - UserService instantiation
+[INFO ] 2021-06-09 11:02:28.079 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-06-09 11:02:28.108 [main] UserServiceImpl - Error or no task given
+[INFO ] 2021-06-09 11:04:14.658 [main] ServiceFactory - TaskService instantiation
+[INFO ] 2021-06-09 11:04:15.031 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-09 11:04:15.033 [main] ServiceFactory - UserService instantiation
+[INFO ] 2021-06-09 11:04:15.036 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-09 11:14:02.055 [main] ServiceFactory - TaskService instantiation
+[INFO ] 2021-06-09 11:14:02.361 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-09 11:14:02.363 [main] ServiceFactory - UserService instantiation
+[INFO ] 2021-06-09 11:14:02.365 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-09 13:29:09.672 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-09 13:29:09.979 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-09 13:29:09.979 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-09 13:29:09.983 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-09 13:29:24.080 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-09 13:29:24.389 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-09 13:29:24.389 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-09 13:29:24.393 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-09 13:30:26.490 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-09 13:30:26.793 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-09 13:30:26.793 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-09 13:30:26.797 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-06-09 13:30:26.815 [main] UserServiceImpl - Error or userName alreadyUsed
+[DEBUG] 2021-06-09 13:30:33.834 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-09 13:30:34.137 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-09 13:30:34.137 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-09 13:30:34.141 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-06-09 13:30:34.169 [main] UserServiceImpl - Error or no task given
+[DEBUG] 2021-06-09 13:31:04.797 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-09 13:31:05.102 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-09 13:31:05.102 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-09 13:31:05.106 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-06-09 13:31:05.125 [main] TaskServiceImpl - Error or Task already exist
+[DEBUG] 2021-06-10 23:59:00.246 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-10 23:59:00.622 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-10 23:59:00.622 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-10 23:59:00.637 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-11 09:42:14.784 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-11 09:42:15.124 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-11 09:42:15.124 [main] ServiceFactory - UserService retrieval
+[DEBUG] 2021-06-11 09:43:54.103 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-11 09:43:54.457 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-11 09:43:54.457 [main] ServiceFactory - UserService retrieval
+[DEBUG] 2021-06-11 09:48:19.686 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-11 09:48:20.008 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-11 09:48:20.008 [main] ServiceFactory - UserService retrieval
+[DEBUG] 2021-06-11 10:12:22.589 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-11 10:12:22.915 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-11 10:12:22.915 [main] ServiceFactory - UserService retrieval
+[DEBUG] 2021-06-11 11:07:05.839 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-11 11:07:06.205 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-11 11:07:06.205 [main] ServiceFactory - UserService retrieval
+[DEBUG] 2021-06-11 11:24:36.433 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-11 11:24:36.797 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-11 11:24:36.797 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-11 11:24:37.935 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-11 11:24:37.937 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-11 11:24:37.937 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 10:20:03.293 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 10:20:03.703 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 10:20:03.704 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 10:20:05.107 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 10:20:05.109 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 10:20:05.110 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 10:35:13.465 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 10:35:13.777 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 10:35:13.777 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 10:35:14.686 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 10:35:14.688 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 10:35:14.688 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-06-14 10:35:14.695 [main] UserServiceImpl - Error or userName alreadyUsed
+[DEBUG] 2021-06-14 10:58:03.200 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 10:58:03.206 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:01:26.973 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:01:28.180 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:12:40.997 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:12:41.002 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:12:41.002 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:12:42.200 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:12:42.202 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:12:42.202 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:16:04.764 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:16:04.769 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:16:04.770 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:16:05.963 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:16:05.965 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:16:05.965 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:18:02.460 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:18:02.786 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:18:02.787 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:18:02.794 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:18:02.796 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:18:02.796 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:22:59.511 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:22:59.826 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:22:59.827 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:22:59.833 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:22:59.836 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:22:59.836 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:25:46.483 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:25:46.806 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:25:46.806 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:25:46.810 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:28:35.522 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:28:35.837 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:28:35.837 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:28:35.841 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:28:35.843 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:28:35.843 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:29:22.651 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:29:22.961 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:29:22.961 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:29:22.965 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-06-14 11:29:22.996 [main] UserServiceImpl - Error or no task given
+[DEBUG] 2021-06-14 11:35:50.269 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-14 11:35:50.567 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-14 11:35:50.567 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:35:50.571 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 11:35:50.573 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 11:35:50.573 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 15:18:39.993 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 15:18:41.437 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 15:23:08.818 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 15:23:10.304 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-14 15:23:25.401 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-14 15:23:26.857 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-15 09:10:08.428 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-15 09:10:09.862 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-15 09:19:02.421 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-15 09:19:03.721 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-15 09:25:49.970 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-15 09:25:51.241 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-15 09:31:23.649 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-15 09:31:24.910 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-15 09:31:53.702 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-15 09:31:54.966 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-15 09:32:21.880 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-15 09:32:23.177 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-15 09:33:09.187 [main] ServiceFactory - UserService retrieval
+[INFO ] 2021-06-15 09:33:10.494 [main] UserServiceImpl - UserServiceImpl instantiation
+[DEBUG] 2021-06-15 09:39:11.080 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-15 09:39:11.089 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-15 09:39:28.994 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-15 09:39:28.999 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-15 09:39:43.454 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-15 09:39:43.460 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-15 09:44:26.603 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-15 09:44:27.959 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[DEBUG] 2021-06-15 09:47:41.447 [main] ServiceFactory - TaskService retrieval
+[INFO ] 2021-06-15 09:47:42.767 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-15 09:49:58.731 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-15 09:50:20.576 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-15 09:58:41.952 [main] TaskServiceImpl - TaskServiceImpl instantiation
