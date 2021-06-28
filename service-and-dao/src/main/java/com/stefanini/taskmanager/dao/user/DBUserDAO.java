@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -102,8 +101,8 @@ public class DBUserDAO implements UserDAO {
     return users;
   }
 
-  private Integer findUserIdByUserName(String userName) {
-    String query = "select userId from users where userName = ?";
+  public User findUserByUserName(String userName) {
+    String query = "select firstName, lastName, userName, userId from users where userName = ?";
     PreparedStatement p;
     try {
       p = connection.prepareStatement(query);
@@ -111,7 +110,7 @@ public class DBUserDAO implements UserDAO {
       ResultSet rs = p.executeQuery();
 
       if (rs.next()) {
-        return rs.getInt(1);
+        return new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getInt(4));
       }
     } catch (SQLException e) {
       logger.error(e);
@@ -120,32 +119,4 @@ public class DBUserDAO implements UserDAO {
     return null;
   }
 
-  public boolean addTask(String userName, String title) {
-    Integer userId = findUserIdByUserName(userName);
-    if (userId == null) {
-      logger.error("User not exists");
-      return false;
-    }
-    try {
-
-      String query =
-          "insert into users_tasks (userId, taskId) select ?, taskId from tasks where title = ?";
-      PreparedStatement p = connection.prepareStatement(query);
-
-      p.setInt(1, userId);
-      p.setString(2, title);
-      int i = p.executeUpdate();
-      if (i > 0) {
-        logger.info(i + " records inserted");
-      }
-      return true;
-    } catch (SQLIntegrityConstraintViolationException e) {
-      logger.error("User " + userId + " already has this task ");
-      return false;
-    } catch (SQLException e) {
-
-      logger.error(e);
-      return false;
-    }
-  }
 }

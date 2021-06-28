@@ -1,0 +1,12 @@
+Week2
+Sarcina pentru săptămână 2:
+1. Înlocuiți JDBC cu Hibernate, adăugați relații între tabele folosind Hibernate Mappings
+2. Rescrieți toate interogările în baza de date folosind HQL (hibernate query language)    NONONO - hibernate criteria
+3. Adăugați o funcționalitate/comanda nouă: creați un utilizator și adăugați imediat sarcini la el (prin Hibernate).
+	a. Toate acestea trebuie făcute într-o singură tranzacție.
+	b. Mecanism de 'rollback' necesar
+4. Familiarizați-vă cu principiile AOP (Aspect-Oriented Programming), adnotări și reflexie java.
+	a. Setați adnotarea personalizată pentru clasele de utilizator și sarcini
+	b. Folosind reflecția, implementați un mecanism pentru trimiterea e-mailurilor către conturile dvs. personale @extendaretail cu următoarele informații:
+		i. Utilizatorul (prenume) / {prenume} identificat prin {nume utilizator} a fost creat
+		ii. Activitatea {task title} {task description} a fost atribuită lui {username}

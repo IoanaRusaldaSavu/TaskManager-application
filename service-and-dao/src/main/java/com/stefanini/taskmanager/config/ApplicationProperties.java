@@ -15,14 +15,14 @@ public class ApplicationProperties {
   private String url;
   private String username;
   private String password;
-  private String serviceType;
+  private String daoType;
 
   private ApplicationProperties() {
     Properties props = extractProperties();
     url = props.getProperty("jdbc.url");
     username = props.getProperty("jdbc.username");
     password = props.getProperty("jdbc.password");
-    serviceType = props.getProperty("service.type");
+    daoType = props.getProperty("service.type");
   }
 
   public static ApplicationProperties getApplicationProperties() {
@@ -44,8 +44,8 @@ public class ApplicationProperties {
     return password;
   }
 
-  public String getServiceType() {
-    return serviceType;
+  public String getDaoType() {
+    return daoType;
   }
   /** @return properties extracted for application */
   private static Properties extractProperties() {

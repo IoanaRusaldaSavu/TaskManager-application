@@ -1,10 +1,16 @@
 package com.stefanini.taskmanager.dto;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -24,7 +30,15 @@ public class User implements java.io.Serializable {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "userId")
   private Integer userId;
+
+  @ManyToMany
+  @JoinTable(
+      name = "users_tasks",
+      joinColumns = @JoinColumn(name = "userId"),
+      inverseJoinColumns = @JoinColumn(name = "taskId"))
+  private Set<Task> tasks = new HashSet<Task>();
 
   public User() {}
 
@@ -32,6 +46,13 @@ public class User implements java.io.Serializable {
     this.firstName = firstName;
     this.lastName = lastName;
     this.userName = userName;
+  }
+
+  public User(String firstName, String lastName, String userName, Integer userId) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.userName = userName;
+    this.userId = userId;
   }
 
   public String getFirstName() {
@@ -66,14 +87,28 @@ public class User implements java.io.Serializable {
     this.userId = userid;
   }
 
+  public Set<Task> getTasks() {
+    return tasks;
+  }
+
+  public void setTasks(Set<Task> tasks) {
+    this.tasks = tasks;
+  }
+
+  public void addTask(Task task) {
+    tasks.add(task);
+  }
+
   @Override
   public String toString() {
     return String.format(
         "FirstName: "
-            + this.firstName
+            + firstName
             + " LastName: "
-            + this.lastName
+            + lastName
             + " UserName: "
-            + this.userName);
+            + userName
+            + " UserId: "
+            + userId);
   }
 }

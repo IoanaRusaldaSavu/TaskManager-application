@@ -4,18 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.NoResultException;
-import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.stefanini.taskmanager.config.HibernateConfig;
 import com.stefanini.taskmanager.dao.TaskDAO;
 import com.stefanini.taskmanager.dto.Task;
 
 public class HibernateTaskDAO implements TaskDAO {
-	  private static EntityManagerFactory entity =
-		      Persistence.createEntityManagerFactory("task-manager");
+  private Logger logger = LogManager.getLogger(HibernateTaskDAO.class);
   private static HibernateTaskDAO hibernateTaskDAO;
 
   private HibernateTaskDAO() {}
@@ -27,51 +28,55 @@ public class HibernateTaskDAO implements TaskDAO {
 
   @Override
   public Task createTask(Task task) {
-    // TODO Auto-generated method stub
-		  EntityManager em = entity.createEntityManager();
-		    EntityTransaction et = null;
-		    try {
-		      et = em.getTransaction();
-		      et.begin();
+    if (findTaskByTitle(task.getTaskTitle()) != null) {
+      logger.error("Task already exists");
+      return null;
+    }
+
+    EntityManager em = HibernateConfig.createEntity();
+    EntityTransaction et = null;
+    try {
+      et = em.getTransaction();
+      et.begin();
       em.persist(task);
-		      et.commit();
-		    } catch (Exception ex) {
-		      if (et != null) {
-		        et.rollback();
-		      }
-		      ex.printStackTrace();
-		    } finally {
-		      em.close();
-		    }
+      et.commit();
+    } catch (Exception ex) {
+      if (et != null) {
+        et.rollback();
+      }
+      logger.error(ex);
+    }
     return task;
   }
-  
 
   @Override
   public List<Task> getTasks() {
 
     List<Task> tasks = new ArrayList<Task>();
-    EntityManager em = entity.createEntityManager();
-    String query = "select t FROM Task t";
-    // SELECT c FROM Customer c WHERE c.id IS NOT NULL
-
-    // Issue the query and get a matching Customer
+    EntityManager em = HibernateConfig.createEntity();
+    String query = "FROM Task";
     TypedQuery<Task> tq = em.createQuery(query, Task.class);
-    // tq.setParameter("custID", id);
-
-    // Customer cust = null;
-    // User user = null;
     try {
-      // Get matching customer object and output
-      //  user = tq.getSingleResult();
       tasks = tq.getResultList();
-      // System.out.println(cust.getFName() + " " + cust.getLName());
-      // users.add(user);
     } catch (NoResultException ex) {
-      ex.printStackTrace();
-    } finally {
-      em.close();
+      logger.error(ex);
     }
-
     return tasks;
-  }}
+  }
+
+  @Override
+  public Task findTaskByTitle(String title) {
+    EntityManager em = HibernateConfig.createEntity();
+
+    String query = "FROM Task t where title = :title";
+    TypedQuery<Task> tq = em.createQuery(query, Task.class);
+    tq.setParameter("title", title);
+    Task task = null;
+    try {
+      task = tq.getSingleResult();
+    } catch (NoResultException ex) {
+      logger.error(ex);
+    }
+    return task;
+  }
+}

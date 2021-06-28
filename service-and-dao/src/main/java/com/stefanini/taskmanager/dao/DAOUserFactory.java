@@ -19,7 +19,6 @@ public class DAOUserFactory {
     } else if (DAOType.equals("hibernate")) {
       return HibernateUserDAO.getInstanceUserDAO();
     }
-
     return null;
   }
 }

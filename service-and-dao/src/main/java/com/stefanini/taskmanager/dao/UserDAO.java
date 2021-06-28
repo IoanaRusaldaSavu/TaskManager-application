@@ -23,5 +23,9 @@ public interface UserDAO {
    * @return false - if an error appeared or user already have the task ture - if was added
    *     successfully
    */
-  public boolean addTask(String userName, String title);
+  /**
+   * @param userName
+   * @return null if there are no user with specified userName, else return the User
+   */
+  public User findUserByUserName(String userName);
 }

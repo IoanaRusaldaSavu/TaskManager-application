@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
     logger.info("UserServiceImpl instantiation");
     this.userDAO = userDAO;
   }
-
+  
   public static UserServiceImpl getUserService(UserDAO userDAO) {
     if (userServiceImpl == null) {
       return new UserServiceImpl(userDAO);
@@ -34,11 +34,5 @@ public class UserServiceImpl implements UserService {
 
   public List<User> getUsers() {
     return userDAO.getUsers();
-  }
-
-  public void addTaskToUser(String userName, String title) {
-    if (!userDAO.addTask(userName, title)) {
-      logger.error("Error or no task given");
-    }
   }
 }

@@ -13,7 +13,7 @@ public class Main {
   public static void main(String[] args) {
     // TODO: close DB connection
     CommandExecutor executor = CommandExecutor.getExecutor();
-
+    
     if (args[0].equals("-createUser")) {
       CreateUser createUserCommand =
           new CreateUser(

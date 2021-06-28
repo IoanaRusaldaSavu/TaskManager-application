@@ -87,10 +87,13 @@ public class FileUserDAO implements UserDAO {
     public void setConnection(Connection connection) { // TODO Auto-generated method stub
     }
   */
-  @Override
-  public boolean addTask(String userName, String title) { // TODO Auto-generated method stub
+  // @Override
+  /*  public boolean addTask(String userName, String title) { // TODO Auto-generated method stub
     return false;
+  }*/
+
+  @Override
+  public User findUserByUserName(String userName) { // TODO Auto-generated method stub
+    return null;
   }
-
-
 }

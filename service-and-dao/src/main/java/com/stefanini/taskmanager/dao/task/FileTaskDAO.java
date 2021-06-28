@@ -26,6 +26,7 @@ public class FileTaskDAO implements TaskDAO{
   		System.out.println("IOException is caught");
   		}
   	return task;
+
   }*/
   public ArrayList<Task> getTasks() {
 		 ArrayList<Task> tasks = new ArrayList<Task>();
@@ -51,6 +52,11 @@ public class FileTaskDAO implements TaskDAO{
   @Override
   public Task createTask(Task task) {
     // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Task findTaskByTitle(String title) { // TODO Auto-generated method stub
     return null;
   }
 

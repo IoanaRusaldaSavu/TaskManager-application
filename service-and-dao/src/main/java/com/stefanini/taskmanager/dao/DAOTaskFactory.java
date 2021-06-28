@@ -20,8 +20,6 @@ public class DAOTaskFactory {
     } else if (DAOType.equals("hibernate")) {
       return HibernateTaskDAO.getInstanceTaskDAO();
     }
-
     return null;
-    
   }
 }

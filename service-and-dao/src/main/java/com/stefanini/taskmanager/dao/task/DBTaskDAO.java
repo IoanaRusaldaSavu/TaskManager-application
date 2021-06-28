@@ -94,4 +94,22 @@ public class DBTaskDAO implements TaskDAO {
     }
     return tasks;
   }
+
+  public Task findTaskByTitle(String title) {
+    String query = "select title, description, taskId from tasks where title = ?";
+    PreparedStatement p;
+    try {
+      p = connection.prepareStatement(query);
+      p.setString(1, title);
+      ResultSet rs = p.executeQuery();
+
+      if (rs.next()) {
+        return new Task(rs.getString(1), rs.getString(2), rs.getInt(3));
+      }
+    } catch (SQLException e) {
+      logger.error(e);
+      return null;
+    }
+    return null;
+  }
 }
