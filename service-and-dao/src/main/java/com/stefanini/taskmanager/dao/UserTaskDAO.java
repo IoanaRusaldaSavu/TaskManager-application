@@ -3,7 +3,7 @@ package com.stefanini.taskmanager.dao;
 import com.stefanini.taskmanager.dto.Task;
 import com.stefanini.taskmanager.dto.User;
 /**
- * TODO:description
+ * This interface provides methods for User-Task relation
  *
  * @author isavu1
  */

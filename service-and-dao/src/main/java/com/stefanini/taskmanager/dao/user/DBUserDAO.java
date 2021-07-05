@@ -18,7 +18,7 @@ public class DBUserDAO implements UserDAO {
   private Connection connection;
   private static DBUserDAO userDAO;
   private static final Logger logger = LogManager.getLogger(DBUserDAO.class);
-
+  
 
   private DBUserDAO(Connection connection) {
     this.connection = connection;
@@ -34,14 +34,11 @@ public class DBUserDAO implements UserDAO {
 
 
   public User createUser(User user) {
-    // TODO:41 - constant
+    String insertQuery = "insert into Users (firstName, lastName, userName) values(?,?,?)";
     if (isUniqueUsername(user.getUserName())) {
       try {
         PreparedStatement p;
-        p =
-            connection.prepareStatement(
-                "insert into Users (firstName, lastName, userName) values(?,?,?)",
-                Statement.RETURN_GENERATED_KEYS);
+        p = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
         p.setString(1, user.getFirstName());
         p.setString(2, user.getLastName());
         p.setString(3, user.getUserName());

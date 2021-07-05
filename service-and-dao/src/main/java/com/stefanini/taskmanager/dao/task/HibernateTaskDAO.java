@@ -4,13 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
 import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.stefanini.taskmanager.config.CriteriaConfig;
 import com.stefanini.taskmanager.config.HibernateConfig;
 import com.stefanini.taskmanager.dao.TaskDAO;
 import com.stefanini.taskmanager.dto.Task;
@@ -18,6 +21,10 @@ import com.stefanini.taskmanager.dto.Task;
 public class HibernateTaskDAO implements TaskDAO {
   private Logger logger = LogManager.getLogger(HibernateTaskDAO.class);
   private static HibernateTaskDAO hibernateTaskDAO;
+  private EntityManager em = HibernateConfig.getInstanceEntityManager();
+  private CriteriaBuilder cb = em.getCriteriaBuilder();
+
+  private CriteriaConfig criteria = new CriteriaConfig(em.getCriteriaBuilder(), Task.class);
 
   private HibernateTaskDAO() {}
 
@@ -32,20 +39,8 @@ public class HibernateTaskDAO implements TaskDAO {
       logger.error("Task already exists");
       return null;
     }
-
-    EntityManager em = HibernateConfig.createEntity();
-    EntityTransaction et = null;
-    try {
-      et = em.getTransaction();
-      et.begin();
-      em.persist(task);
-      et.commit();
-    } catch (Exception ex) {
-      if (et != null) {
-        et.rollback();
-      }
-      logger.error(ex);
-    }
+    EntityManager em = HibernateConfig.getInstanceEntityManager();
+    em.persist(task);
     return task;
   }
 
@@ -53,9 +48,10 @@ public class HibernateTaskDAO implements TaskDAO {
   public List<Task> getTasks() {
 
     List<Task> tasks = new ArrayList<Task>();
-    EntityManager em = HibernateConfig.createEntity();
-    String query = "FROM Task";
-    TypedQuery<Task> tq = em.createQuery(query, Task.class);
+    CriteriaQuery<Task> cr = cb.createQuery(Task.class);
+    Root<Task> root = cr.from(Task.class);
+    cr.select(root);
+    TypedQuery<Task> tq = em.createQuery(cr);
     try {
       tasks = tq.getResultList();
     } catch (NoResultException ex) {
@@ -66,16 +62,15 @@ public class HibernateTaskDAO implements TaskDAO {
 
   @Override
   public Task findTaskByTitle(String title) {
-    EntityManager em = HibernateConfig.createEntity();
-
-    String query = "FROM Task t where title = :title";
-    TypedQuery<Task> tq = em.createQuery(query, Task.class);
-    tq.setParameter("title", title);
+    CriteriaQuery<Task> cr = cb.createQuery(Task.class);
+    Root<Task> root = cr.from(Task.class);
+    cr.select(root).where(cb.equal(root.get("taskTitle"), title));
+    TypedQuery<Task> tq = em.createQuery(cr);
     Task task = null;
     try {
       task = tq.getSingleResult();
     } catch (NoResultException ex) {
-      logger.error(ex);
+      return null;
     }
     return task;
   }

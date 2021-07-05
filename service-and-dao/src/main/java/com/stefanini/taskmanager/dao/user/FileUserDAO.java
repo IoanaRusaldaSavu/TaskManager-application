@@ -59,7 +59,6 @@ public class FileUserDAO implements UserDAO {
       Object oa = in.readObject();
       while (oa != null) {
         User user = (User) oa;
-        //  System.out.println(user);//TODO:in taskmanager
         users.add(user);
         oa = in.readObject();
       }

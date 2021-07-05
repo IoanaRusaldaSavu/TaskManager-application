@@ -1,0 +1,13 @@
+Sarcini pentru a 3-a săptămână:
+1. Implementați un mecanism de procesare paralela a datelor. Rescrieți aplicatia astfel încât să funcționeze după cum urmează:
+	a. La lansare, programul va solicita date pentru a crea un utilizator și o sarcină (task)
+	b. Apoi, trebuie să ruleze 4 fire de fundal din mainthread (1 thread pentru fiecare dintre comenzi: createuser, assigntasktouser,
+	showallusers, showuser 'stasks) care vor executa funcționalitatea corespunzătoare
+		i. Creați un ThreadPool pe 4 fire
+		ii. Gestionați thread-urile folosind Executor
+		iii. Fire-urile ar trebui să aștepte reciproc să se finalizeze acolo unde este necesar, de exemplu, comanda assigntasktouser trebuie executată
+		după comenzile createuser și createtask
+		iv .După ce toate comenzile s-au terminat, afișați mesajul Finished din firul principal.
+2. Rescrieți interogările DAOlayer fără a utiliza HQL
+ a. În loc de selectquery utilizați https://docs.jboss.org/hibernate/orm/3.2/api/org/hibernate/Criteria.html#list()
+ încărcați toate datele din baza de date, apoi operați cu aceasta utilizând StreamAPI (https://stackify.com/streams-guide-java-8/)

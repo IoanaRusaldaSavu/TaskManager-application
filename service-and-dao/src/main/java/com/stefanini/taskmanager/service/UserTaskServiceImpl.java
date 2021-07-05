@@ -1,10 +1,13 @@
 package com.stefanini.taskmanager.service;
 
+import java.util.List;
+
 import com.stefanini.taskmanager.dao.TaskDAO;
 import com.stefanini.taskmanager.dao.UserDAO;
 import com.stefanini.taskmanager.dao.UserTaskDAO;
 import com.stefanini.taskmanager.dto.Task;
 import com.stefanini.taskmanager.dto.User;
+import com.stefanini.taskmanager.dto.UserTask;
 
 public class UserTaskServiceImpl implements UserTaskService {
   private static UserTaskServiceImpl userTaskService;
@@ -27,11 +30,28 @@ public class UserTaskServiceImpl implements UserTaskService {
     return userTaskService;
   }
 
+
   @Override
-  public void addTaskToUser(String userName, String title) {
-    // TODO:rename
+  public UserTask addTaskToUser(String userName, String title) {
     User user = userDAO.findUserByUserName(userName);
     Task task = taskDAO.findTaskByTitle(title);
-    userTaskDAO.addTaskToUser(user, task);
+    if (user == null || task == null) {
+      return null;
+    }
+    if (!userTaskDAO.addTaskToUser(user, task)) {
+      return null;
+    }
+    return new UserTask(user.getUserName(), task.getTaskTitle(), task.getDescription());
+  }
+  // TODO:find better place for this method
+  public void createUserAndAddTasks(User user, List<Task> tasks) {
+    userDAO.createUser(user);
+    user = userDAO.findUserByUserName(user.getUserName());
+    Task task;
+    for (Task t : tasks) {
+      taskDAO.createTask(t);
+      task = taskDAO.findTaskByTitle(t.getTaskTitle());
+      userTaskDAO.addTaskToUser(user, task);
+    }
   }
 }

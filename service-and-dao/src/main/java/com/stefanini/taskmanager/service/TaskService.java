@@ -4,8 +4,7 @@ import java.util.List;
 
 import com.stefanini.taskmanager.dto.Task;
 /**
- * TODO:description
- *
+ * This interface provides services for Task
  * @author isavu1
  */
 public interface TaskService {

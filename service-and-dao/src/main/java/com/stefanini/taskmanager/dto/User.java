@@ -13,18 +13,24 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import com.stefanini.taskmanager.dto.annotations.Email;
+import com.stefanini.taskmanager.dto.annotations.EmailField;
+
 @Entity
 @Table(name = "users")
+@Email(message = "User {firstName} / {lastName} identified by {userName} was created")
 public class User implements java.io.Serializable {
-  /** */
   private static final long serialVersionUID = -225885835546300951L;
 
+  @EmailField(field = "firstName")
   @Column(name = "firstName")
   private String firstName;
 
+  @EmailField(field = "lastName")
   @Column(name = "lastName")
   private String lastName;
 
+  @EmailField(field = "userName")
   @Column(name = "userName", unique = true)
   private String userName;
 
@@ -39,6 +45,7 @@ public class User implements java.io.Serializable {
       joinColumns = @JoinColumn(name = "userId"),
       inverseJoinColumns = @JoinColumn(name = "taskId"))
   private Set<Task> tasks = new HashSet<Task>();
+
 
   public User() {}
 

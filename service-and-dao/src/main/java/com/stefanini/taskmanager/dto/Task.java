@@ -13,13 +13,16 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tasks")
+
 public class Task implements java.io.Serializable {
 
   private static final long serialVersionUID = -1439938994130322629L;
 
+ 
   @Column(name = "title", unique = true)
   private String taskTitle;
 
+  
   @Column(name = "description")
   private String description;
 

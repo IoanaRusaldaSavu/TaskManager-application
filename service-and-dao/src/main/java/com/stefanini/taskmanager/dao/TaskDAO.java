@@ -4,8 +4,7 @@ import java.util.List;
 
 import com.stefanini.taskmanager.dto.Task;
 /**
- * TODO:description
- *
+ * This interface interacts with Task entity
  * @author isavu1
  */
 public interface TaskDAO {

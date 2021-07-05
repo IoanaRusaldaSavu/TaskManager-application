@@ -189,3 +189,153 @@
 [INFO ] 2021-06-28 14:13:16.139 [main] UserServiceImpl - UserServiceImpl instantiation
 [INFO ] 2021-06-28 14:19:25.122 [main] TaskServiceImpl - TaskServiceImpl instantiation
 [INFO ] 2021-06-28 14:46:42.547 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-29 12:25:48.076 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[ERROR] 2021-06-29 12:25:49.676 [main] TaskServiceImpl - Error or Task already exist
+[INFO ] 2021-06-29 12:26:14.005 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-29 12:28:36.126 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[ERROR] 2021-06-29 12:28:37.554 [main] TaskServiceImpl - Error or Task already exist
+[INFO ] 2021-06-29 12:29:09.372 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-29 12:30:29.064 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-29 12:56:04.436 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-29 21:02:48.525 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-29 21:06:03.371 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-29 21:06:54.489 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-29 21:07:19.518 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-29 21:08:21.021 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-29 21:16:23.001 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-29 21:16:24.276 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-29 21:19:23.256 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-29 21:19:24.578 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-29 21:20:15.357 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-29 21:33:48.964 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-06-30 11:03:12.717 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-06-30 11:03:14.260 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-06-30 11:03:20.405 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:06:45.942 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:11:03.606 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:13:02.855 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:13:59.158 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:14:42.887 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:15:09.678 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:16:39.753 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:18:20.198 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:19:03.790 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:20:15.863 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:21:42.457 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:24:50.424 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:26:59.835 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:28:33.083 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:45:17.325 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:46:55.326 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:51:06.051 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:52:14.340 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:52:54.454 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:56:26.129 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 11:59:53.471 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 12:01:02.667 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 12:01:20.410 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 12:13:31.081 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 13:57:32.205 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:04:25.061 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:05:51.044 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:06:57.312 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:20:09.108 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:20:30.090 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:24:44.631 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:32:16.663 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:32:53.362 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:34:01.975 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:34:19.343 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:34:44.837 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:35:15.816 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:35:33.119 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:41:21.336 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:41:40.565 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:47:07.991 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:59:05.680 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 14:59:43.966 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:01:45.253 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:02:34.214 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:03:17.052 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:12:59.874 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:13:15.418 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:14:27.967 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:15:17.029 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:15:50.199 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:17:02.834 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:17:15.159 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:18:30.320 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:19:31.892 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:19:55.058 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:21:03.739 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:22:42.080 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:24:54.167 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:25:15.359 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:25:57.820 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-06-30 15:26:34.778 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-06-30 15:26:36.059 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-06-30 15:26:57.237 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-01 09:55:31.309 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-01 09:55:31.331 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-07-01 10:02:50.910 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[ERROR] 2021-07-01 10:02:52.325 [main] TaskServiceImpl - Error or Task already exist
+[INFO ] 2021-07-01 10:03:21.161 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-01 10:03:21.169 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-07-01 10:36:00.803 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-01 10:37:18.214 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-01 13:23:11.767 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-01 13:24:03.408 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-07-01 13:25:22.286 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-07-01 13:25:32.401 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-01 13:28:59.702 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:14:11.045 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 09:14:12.566 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 09:16:55.822 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:26:49.284 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:27:48.592 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 09:27:49.937 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 09:45:18.941 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 09:45:20.430 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 09:45:34.979 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:48:45.167 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:49:29.066 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:53:28.366 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:54:12.732 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:55:17.242 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:56:41.381 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:58:03.770 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:59:04.983 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 09:59:43.584 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 09:59:45.040 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 10:00:02.343 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:04:17.165 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:04:57.057 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 10:04:58.507 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 10:05:13.631 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 10:05:15.052 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 10:05:25.586 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:05:51.065 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:07:08.182 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 10:07:09.662 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 10:07:21.050 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 10:07:22.517 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 10:07:37.737 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:08:40.940 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:09:54.790 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:14:37.134 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:15:59.856 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:19:53.134 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 10:19:54.484 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 10:21:38.027 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 10:21:39.398 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 10:21:54.407 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 10:23:32.372 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 11:01:31.056 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 11:04:20.212 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 11:39:46.247 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 12:01:09.245 [main] UserServiceImpl - UserServiceImpl instantiation
+[ERROR] 2021-07-05 12:01:10.588 [main] UserServiceImpl - Error or userName alreadyUsed
+[INFO ] 2021-07-05 12:42:24.214 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 12:42:47.976 [main] UserServiceImpl - UserServiceImpl instantiation
+[INFO ] 2021-07-05 12:45:23.497 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-07-05 13:07:11.227 [main] TaskServiceImpl - TaskServiceImpl instantiation

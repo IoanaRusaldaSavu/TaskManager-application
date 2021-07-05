@@ -16,8 +16,6 @@ public class AddTaskToUser implements Operations {
   
   @Override
   public void execute() {
-    if (userTaskService == null) System.out.println("ceva");
     userTaskService.addTaskToUser(userName, title);
   }
-  
 }

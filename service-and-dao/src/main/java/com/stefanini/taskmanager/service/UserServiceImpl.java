@@ -12,7 +12,7 @@ public class UserServiceImpl implements UserService {
   private UserDAO userDAO;
   private static UserServiceImpl userServiceImpl;
   private Logger logger = LogManager.getLogger(UserServiceImpl.class);
-
+  // private EntityManager em;
   private UserServiceImpl(UserDAO userDAO) {
     logger.info("UserServiceImpl instantiation");
     this.userDAO = userDAO;
@@ -25,11 +25,13 @@ public class UserServiceImpl implements UserService {
     return userServiceImpl;
   }
 
-  public void createUser(User user) {
-    if (userDAO.createUser(user) == null) {
+
+  public User createUser(User user) {
+    User createdUser = userDAO.createUser(user);
+    if (createdUser == null) {
       logger.error("Error or userName alreadyUsed");
-      
     }
+    return createdUser;
   }
 
   public List<User> getUsers() {

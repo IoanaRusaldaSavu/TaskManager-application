@@ -32,7 +32,6 @@ public class TaskServiceImpl implements TaskService {
     }
   }
 
-  
   public List<Task> getTasks() {
     return taskDAO.getTasks();
   }
