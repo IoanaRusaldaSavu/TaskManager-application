@@ -2,6 +2,7 @@ package com.stefanini.taskmanager.dao.task;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
@@ -45,7 +46,7 @@ public class HibernateTaskDAO implements TaskDAO {
   }
 
   @Override
-  public List<Task> getTasks() {
+  public Stream<Task> getTasks() {
 
     List<Task> tasks = new ArrayList<Task>();
     CriteriaQuery<Task> cr = cb.createQuery(Task.class);
@@ -57,7 +58,7 @@ public class HibernateTaskDAO implements TaskDAO {
     } catch (NoResultException ex) {
       logger.error(ex);
     }
-    return tasks;
+    return tasks.stream();
   }
 
   @Override

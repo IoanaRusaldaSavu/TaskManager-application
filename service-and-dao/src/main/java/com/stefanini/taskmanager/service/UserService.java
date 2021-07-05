@@ -1,6 +1,6 @@
 package com.stefanini.taskmanager.service;
 
-import java.util.List;
+import java.util.stream.Stream;
 
 import com.stefanini.taskmanager.dto.User;
 import com.stefanini.taskmanager.dto.annotations.EmailGenerator;
@@ -13,5 +13,5 @@ public interface UserService {
   @EmailGenerator
   public User createUser(User user);
   /** show all users from application */
-  public List<User> getUsers();
+  public Stream<User> getUsers();
 }

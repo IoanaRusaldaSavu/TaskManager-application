@@ -1,6 +1,6 @@
 package com.stefanini.taskmanager.service;
 
-import java.util.List;
+import java.util.stream.Stream;
 
 import com.stefanini.taskmanager.dto.Task;
 /**
@@ -11,5 +11,5 @@ public interface TaskService {
   /** @param task - create a new task */
   public void createTask(Task task);
   /** show all tasks of application */
-  public List<Task> getTasks();
+  public Stream<Task> getTasks();
 }

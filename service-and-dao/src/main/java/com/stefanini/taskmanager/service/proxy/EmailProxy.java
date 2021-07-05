@@ -20,20 +20,20 @@ public class EmailProxy implements java.lang.reflect.InvocationHandler {
   }
 
   public Object invoke(Object proxy, Method m, Object[] args) throws Throwable {
-    Object result;
-    result = m.invoke(obj, args);
+    Object result = m.invoke(obj, args);
     if (result != null) {
       Class<? extends Object> resultClass = result.getClass();
       if (resultClass.isAnnotationPresent(Email.class)
           && m.isAnnotationPresent(EmailGenerator.class)) {
-        String email = resultClass.getAnnotation(Email.class).message();
-        sendEmail(result, email);
+        String emailTemplate = resultClass.getAnnotation(Email.class).message();
+        String email = buildEmail(result, emailTemplate);
+        System.out.println(email);
       }
     }
     return result;
   }
-  // TODO:try/catch
-  private void sendEmail(Object result, String email)
+
+  private String buildEmail(Object result, String email)
       throws IllegalArgumentException, IllegalAccessException {
     for (Field f : result.getClass().getDeclaredFields()) {
       if (f.isAnnotationPresent(EmailField.class)) {
@@ -43,6 +43,6 @@ public class EmailProxy implements java.lang.reflect.InvocationHandler {
         f.setAccessible(false);
       }
     }
-    System.out.println(email);
+    return email;
   }
 }

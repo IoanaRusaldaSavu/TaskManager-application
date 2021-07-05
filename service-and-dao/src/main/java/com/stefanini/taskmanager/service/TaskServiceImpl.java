@@ -1,6 +1,6 @@
 package com.stefanini.taskmanager.service;
 
-import java.util.List;
+import java.util.stream.Stream;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,7 +32,7 @@ public class TaskServiceImpl implements TaskService {
     }
   }
 
-  public List<Task> getTasks() {
+  public Stream<Task> getTasks() {
     return taskDAO.getTasks();
   }
 }

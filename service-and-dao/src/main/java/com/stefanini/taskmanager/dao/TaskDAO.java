@@ -1,6 +1,6 @@
 package com.stefanini.taskmanager.dao;
 
-import java.util.List;
+import java.util.stream.Stream;
 
 import com.stefanini.taskmanager.dto.Task;
 /**
@@ -15,7 +15,7 @@ public interface TaskDAO {
    */
   public Task createTask(Task task);
   /** @return null if there are no tasks added */
-  public List<Task> getTasks();
+  public Stream<Task> getTasks();
   /**
    * @param title
    * @return null if there are no tasks with specified title, else return the task

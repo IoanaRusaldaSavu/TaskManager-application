@@ -1,6 +1,6 @@
 package com.stefanini.taskmanager.commands;
 
-import java.util.List;
+import java.util.stream.Stream;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,11 +17,9 @@ public class ShowUsers implements Operations {
 
   @Override
   public void execute() {
-    List<User> users = userService.getUsers();
+    Stream<User> users = userService.getUsers();
     if (users != null) {
-      for (User u : users) {
-        System.out.println(u);
-      }
+      users.forEach(e -> System.out.println(e));
     } else {
       logger.error("Error or no users added");
     }

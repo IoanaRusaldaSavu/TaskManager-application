@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.stream.Stream;
 
 import com.stefanini.taskmanager.dao.TaskDAO;
 import com.stefanini.taskmanager.dto.Task;
@@ -28,8 +30,8 @@ public class FileTaskDAO implements TaskDAO{
   	return task;
 
   }*/
-  public ArrayList<Task> getTasks() {
-		 ArrayList<Task> tasks = new ArrayList<Task>();
+  public Stream<Task> getTasks() {
+    List<Task> tasks = new ArrayList<Task>();
 		 try {
 			 FileInputStream file = new FileInputStream (this.file);
 			 ObjectInputStream in = new ObjectInputStream (file); 
@@ -46,7 +48,7 @@ public class FileTaskDAO implements TaskDAO{
 			System.out.println("IOException is caught"); 
 		}catch (ClassNotFoundException ex) {
 			System.out.println("ClassNotFoundException" + " is caught"); }
-		 return tasks;
+    return tasks.stream();
 	  }
 
   @Override

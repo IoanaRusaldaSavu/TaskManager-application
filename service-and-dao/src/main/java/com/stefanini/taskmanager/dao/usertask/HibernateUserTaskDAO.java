@@ -41,9 +41,9 @@ public class HibernateUserTaskDAO implements UserTaskDAO {
   }
 
   private boolean verifyTaskGiven(Integer userId, Integer taskId) {
-    // EntityManager em = HibernateConfig.getInstanceEntityManager();
     String query =
         "select userId, taskId from users_tasks where taskId = :taskId and userId = :userId";
+    // TODO:custom criteria
     Query tq = em.createNativeQuery(query);
     tq.setParameter("taskId", taskId);
     tq.setParameter("userId", userId);

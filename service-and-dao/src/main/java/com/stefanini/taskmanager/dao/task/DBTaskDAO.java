@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -80,7 +81,7 @@ public class DBTaskDAO implements TaskDAO {
     return true;
   }
 
-  public List<Task> getTasks() {
+  public Stream<Task> getTasks() {
     List<Task> tasks = new ArrayList<Task>();
     try {
       Statement s = connection.createStatement();
@@ -92,7 +93,7 @@ public class DBTaskDAO implements TaskDAO {
     } catch (SQLException e) {
       logger.error(e);
     }
-    return tasks;
+    return tasks.stream();
   }
 
   public Task findTaskByTitle(String title) {

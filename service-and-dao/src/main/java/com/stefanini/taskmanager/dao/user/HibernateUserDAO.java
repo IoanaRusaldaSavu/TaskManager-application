@@ -2,6 +2,7 @@ package com.stefanini.taskmanager.dao.user;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
@@ -16,7 +17,6 @@ import org.apache.logging.log4j.Logger;
 import com.stefanini.taskmanager.config.HibernateConfig;
 import com.stefanini.taskmanager.dao.UserDAO;
 import com.stefanini.taskmanager.dto.User;
-import com.stefanini.taskmanager.dto.annotations.EmailGenerator;
 
 public class HibernateUserDAO implements UserDAO {
   private static HibernateUserDAO hibernateUserDAO;
@@ -36,7 +36,6 @@ public class HibernateUserDAO implements UserDAO {
   }
 
   @Override
-  @EmailGenerator
   public User createUser(User user) {
     if (findUserByUserName(user.getUserName()) != null) {
       logger.error("This username already exists");
@@ -48,7 +47,7 @@ public class HibernateUserDAO implements UserDAO {
   }
 
   @Override
-  public List<User> getUsers() {
+  public Stream<User> getUsers() {
     List<User> users = new ArrayList<User>();
     CriteriaQuery<User> cr = cb.createQuery(User.class);
     Root<User> root = cr.from(User.class);
@@ -60,7 +59,7 @@ public class HibernateUserDAO implements UserDAO {
     } catch (NoResultException ex) {
       logger.error(ex);
     }
-    return users;
+    return users.stream();
   }
   public User findUserByUserName(String userName) {
     CriteriaQuery<User> cr = cb.createQuery(User.class);

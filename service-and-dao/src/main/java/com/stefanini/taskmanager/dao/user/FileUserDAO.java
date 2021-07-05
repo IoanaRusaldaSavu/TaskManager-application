@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 import com.stefanini.taskmanager.dao.UserDAO;
 import com.stefanini.taskmanager.dto.User;
@@ -51,7 +52,7 @@ public class FileUserDAO implements UserDAO {
     return user;
   }
 
-  public ArrayList<User> getUsers() {
+  public Stream<User> getUsers() {
     ArrayList<User> users = new ArrayList<User>();
     try {
       FileInputStream file = new FileInputStream(this.file);
@@ -65,14 +66,14 @@ public class FileUserDAO implements UserDAO {
       in.close();
       file.close();
     } catch (EOFException ex) {
-      return users;
+      return users.stream();
     } catch (IOException ex) {
       ex.printStackTrace();
       System.out.println("IOException is caught");
     } catch (ClassNotFoundException ex) {
       System.out.println("ClassNotFoundException" + " is caught");
     }
-    return users;
+    return users.stream();
   }
 
   /*  @Override

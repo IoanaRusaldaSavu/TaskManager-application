@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -81,7 +82,7 @@ public class DBUserDAO implements UserDAO {
     return true;
   }
 
-  public List<User> getUsers() {
+  public Stream<User> getUsers() {
     List<User> users = new ArrayList<User>();
     try {
       Statement s = connection.createStatement();
@@ -95,7 +96,7 @@ public class DBUserDAO implements UserDAO {
       logger.error(e);
       return null;
     }
-    return users;
+    return users.stream();
   }
 
   public User findUserByUserName(String userName) {

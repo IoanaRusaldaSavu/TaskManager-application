@@ -50,7 +50,6 @@ public class Main {
               new User(args[1].substring(4), args[2].substring(4), args[3].substring(4)), tasks);
       executor.addOperation(command);
     }
-    // TODO:remove addTask + no identify by title
     if (args[0].equals("-addTaskToUser")) {
       AddTaskToUser addTaskToUserCommand =
           new AddTaskToUser(args[1].substring(4), args[2].substring(4));

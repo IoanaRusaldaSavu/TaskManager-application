@@ -1,6 +1,6 @@
 package com.stefanini.taskmanager.dao;
 
-import java.util.List;
+import java.util.stream.Stream;
 
 import com.stefanini.taskmanager.dto.User;
 /**
@@ -16,7 +16,7 @@ public interface UserDAO {
    */
   public User createUser(User user);
   /** @return null if there are no user added */
-  public List<User> getUsers();
+  public Stream<User> getUsers();
   /**
    * @param userName
    * @return null if there are no user with specified userName, else return the User

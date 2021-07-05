@@ -339,3 +339,5 @@
 [INFO ] 2021-07-05 12:42:47.976 [main] UserServiceImpl - UserServiceImpl instantiation
 [INFO ] 2021-07-05 12:45:23.497 [main] TaskServiceImpl - TaskServiceImpl instantiation
 [INFO ] 2021-07-05 13:07:11.227 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-07-05 15:50:29.130 [main] TaskServiceImpl - TaskServiceImpl instantiation
+[INFO ] 2021-07-05 15:54:46.027 [main] UserServiceImpl - UserServiceImpl instantiation
