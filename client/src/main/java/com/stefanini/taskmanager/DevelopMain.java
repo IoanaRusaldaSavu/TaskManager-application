@@ -1,66 +1,57 @@
 package com.stefanini.taskmanager;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.stefanini.taskmanager.commands.CreateUserAndAddTasks;
-import com.stefanini.taskmanager.dto.Task;
-import com.stefanini.taskmanager.dto.User;
-
 public class DevelopMain {
   // private static final Logger logger = LogManager.getLogger(Main.class);
 
   public static void main(String[] args) {
+    /*    System.out.println("=========WITH THREAD=========");
+    User user = new User("fn", "ln", "BM");
+    Task task = new Task("Task28", "Task28Description");
+    CreateUser createUser = new CreateUser(user);
+    CreateTask createTask = new CreateTask(task);
+    AddTaskToUser add = new  AddTaskToUser (user.getUserName(), task.getTaskTitle());
+    ShowUsers showUsers = new ShowUsers();
+    Thread thread1 = new Thread(createUser);
+    Thread thread2 = new Thread(createTask);
+    Thread thread3 = new Thread(add);
+    System.out.println(System.nanoTime());
+    thread1.start();
+    thread2.start();
+    try {
+      thread1.join();
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+    try {
+      thread2.join();
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+    thread3.start();
+    System.out.println(System.nanoTime());*/
 
-    /*  HIBERNATE CREATE USER
-     * UserService userServ = ServiceFactory.getUserService();
-    User user = new User("Ioana", "Dima", "ID");
-    userServ.createUser(user);*/
+    /*    System.out.println("=========WITHOUT THREAD=========");
+    User user2 = new User("fn", "ln", "BI");
+    Task task2 = new Task("Task25", "Task25Description");
+    CreateUser createUser2 = new CreateUser(user2);
+    CreateTask createTask2 = new CreateTask(task2);
+    System.out.println(System.nanoTime());
+    createUser2.execute();
+    createTask2.execute();
+    System.out.println(System.nanoTime());*/
 
-    /*HIBERNATE CREATE TASK
-    TaskService taskServ = ServiceFactory.getTaskService();
-    Task task = new Task("Task6", "Task6 Description");
-    taskServ.createTask(task);*/
-
-    /* HIBERNATE ADD TASK TO USER
-    UserTaskService service = ServiceFactory.getUserTaskService();
-    service.addTaskToUser("ID", "Task5");*/
-    // COMPOSITE KEY
-    //  UserTaskService service = ServiceFactory.getUserTaskService();
-    //  service.addTaskToUser("Amp", "Task5");
-
-    // AOP-with decorator
-    /*    TaskService taskServ = ServiceFactory.getTaskService();
-    Task task = new Task("Task7", "Task7Description");
-    ServiceDecorator decorator = new ServiceDecorator(taskServ);
-    decorator.createTask(task);*/
-
-    // AOP-Proxy
-    /*    TaskService taskServ = ServiceFactory.getTaskService();
-    TaskService taskServ2 = (TaskService) AuditProxy.newInstance(taskServ);
-    taskServ2.createTask(new Task("Task7", "Task7Description"));*/
-
-    //    User user = new User("Andrei", "Savu", "AS");
-    //    UserService userService = ServiceFactory.getUserService();
-    //    UserService service = (UserService) EmailProxy.newInstance(userService);
-    //    service.createUser(user);
-    // TEST EMAiL
-    /*    UserDAO userDao = DAOUserFactory.getDAO("hibernate");
-    TaskDAO taskDao = DAOTaskFactory.getDAO("hibernate");
-    UserTaskDAO userTaskDao = DAOUserTaskFactory.getDAO("hibernate");
-    UserTaskService userTaskService =
-        UserTaskServiceImpl.getUserTaskService(userDao, taskDao, userTaskDao);
-    UserTaskService service = (UserTaskService) EmailProxy.newInstance(userTaskService);
-    service.addTaskToUser("AS", "Task1");*/
-	  
-	  CommandExecutor executor = CommandExecutor.getExecutor();
-    List<Task> tasks = new ArrayList<Task>();
-    User user = new User("Mihnea", "Tanase", "MT");
-
-    tasks.add(new Task("Task13", "Task13Description"));
-    tasks.add(new Task("Task14", "Task14Description"));
-    CreateUserAndAddTasks command = new CreateUserAndAddTasks(user, tasks);
-    executor.addOperation(command);
-    executor.execute();
+    //   CommandExecutor executor = CommandExecutor.getExecutor();
+    //   executor.sortOperation();
+    /*    User user = new User("fn", "ln", "BN");
+    Task task = new Task("Task29", "Task29Description");
+    CreateUser createUser = new CreateUser(user);
+    CreateTask createTask = new CreateTask(task);
+    ShowUsers showUsers = new ShowUsers();
+    ShowTasks showTasks = new ShowTasks();
+    executor.addOperation(createUser);
+    executor.addOperation(createTask);
+    executor.addOperation(showUsers);
+    executor.addOperation(showTasks);
+    executor.execute();*/
   }
 }

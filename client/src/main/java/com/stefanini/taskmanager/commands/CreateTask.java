@@ -8,6 +8,7 @@ import com.stefanini.taskmanager.service.TaskService;
 public class CreateTask implements Operations {
   private TaskService taskService = ServiceFactory.getTaskService();
   private Task task;
+  private static final String name = "createTask";
 
   public CreateTask(Task task) {
     this.task = task;
@@ -16,5 +17,19 @@ public class CreateTask implements Operations {
   @Override
   public void execute() {
     taskService.createTask(task);
+  }
+
+
+
+  public String getName() {
+    return name;
+  }
+
+  public Task getTask() {
+    return task;
+  }
+
+  public void setTask(Task task) {
+    this.task = task;
   }
 }

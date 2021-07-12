@@ -22,4 +22,10 @@ public class CreateUserAndAddTasks implements Operations {
   public void execute() {
     userTaskService.createUserAndAddTasks(user, tasks);
 }
+
+
+  @Override
+  public String getName() { // TODO Auto-generated method stub
+    return null;
+  }
 }

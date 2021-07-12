@@ -1,12 +1,10 @@
 package com.stefanini.taskmanager;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 import com.stefanini.taskmanager.commands.AddTaskToUser;
 import com.stefanini.taskmanager.commands.CreateTask;
 import com.stefanini.taskmanager.commands.CreateUser;
-import com.stefanini.taskmanager.commands.CreateUserAndAddTasks;
 import com.stefanini.taskmanager.commands.ShowTasks;
 import com.stefanini.taskmanager.commands.ShowUsers;
 import com.stefanini.taskmanager.dto.Task;
@@ -16,45 +14,56 @@ public class Main {
   public static void main(String[] args) {
     // TODO: close DB connection
     CommandExecutor executor = CommandExecutor.getExecutor();
-    
-    if (args[0].equals("-createUser")) {
-      CreateUser createUserCommand =
-          new CreateUser(
-              new User(args[1].substring(4), args[2].substring(4), args[3].substring(4)));
-      executor.addOperation(createUserCommand);
-    }
-
-    if (args[0].equals("-showAllUsers")) {
-      ShowUsers showUsersCommand = new ShowUsers();
-      executor.addOperation(showUsersCommand);
-    }
-    if (args[0].equals("-createTask")) {
-      CreateTask createTaskCommand =
-          new CreateTask(new Task(args[1].substring(4), args[2].substring(4)));
-      executor.addOperation(createTaskCommand);
-    }
-    if (args[0].equals("-showTasks")) {
-      ShowTasks showTasksCommand = new ShowTasks();
-      executor.addOperation(showTasksCommand);
-    }
-    if (args[0].equals("-createUserAndAddTask")) {
-      // TODO:tasks in user
-      List<Task> tasks = new ArrayList<Task>();
-      int index = 5;
-      for (int i = 0; i < Integer.parseInt(args[4]); i++) {
-        tasks.add(new Task(args[index].substring(4), args[index + 1].substring(4)));
-        index += 2;
+    System.out.println("Enter command:");
+    Scanner scan = new Scanner(System.in);
+    int finished = 0;
+    String command = null;
+    while (true) {
+      command = scan.next();
+      if (command.equals("createUser")) {
+        System.out.println("Enter firstName:");
+        String firstName = scan.next();
+        System.out.println("Enter lastName:");
+        String lastName = scan.next();
+        System.out.println("Enter userName:");
+        String userName = scan.next();
+        CreateUser createUser = new CreateUser(new User(firstName, lastName, userName));
+        executor.addOperation(createUser);
       }
-      CreateUserAndAddTasks command =
-          new CreateUserAndAddTasks(
-              new User(args[1].substring(4), args[2].substring(4), args[3].substring(4)), tasks);
-      executor.addOperation(command);
-    }
-    if (args[0].equals("-addTaskToUser")) {
-      AddTaskToUser addTaskToUserCommand =
-          new AddTaskToUser(args[1].substring(4), args[2].substring(4));
-      executor.addOperation(addTaskToUserCommand);
+      if (command.equals("showUsers")) {
+        ShowUsers showUsers = new ShowUsers();
+        executor.addOperation(showUsers);
+      }
+
+
+      if (command.equals("createTask")) {
+        System.out.println("Enter title:");
+        String title = scan.next();
+        System.out.println("Enter description:");
+        String description = scan.next();
+        CreateTask createTask = new CreateTask(new Task(title, description));
+        executor.addOperation(createTask);
+      }
+      if (command.equals("showTasks")) {
+        ShowTasks showTasks = new ShowTasks();
+        executor.addOperation(showTasks);
+      }
+      if (command.equals("addTaskToUser")) {
+        System.out.println("Enter userName:");
+        String userName = scan.next();
+        System.out.println("Enter title:");
+        String title = scan.next();
+        AddTaskToUser addTaskToUserCommand = new AddTaskToUser(userName, title);
+        executor.addOperation(addTaskToUserCommand);
+      }
+      if (command.equals("finish")) {
+        break;
+      }
+      // TODO:createUserAndAddTask
+
+      System.out.println("Enter command:");
     }
     executor.execute();
+    System.out.println("Finished");
   }
 }

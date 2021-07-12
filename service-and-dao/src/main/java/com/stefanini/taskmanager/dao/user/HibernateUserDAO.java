@@ -41,7 +41,6 @@ public class HibernateUserDAO implements UserDAO {
       logger.error("This username already exists");
       return null;
     }
-    EntityManager em = HibernateConfig.getInstanceEntityManager();
     em.persist(user);
     return user;
   }
@@ -61,6 +60,7 @@ public class HibernateUserDAO implements UserDAO {
     }
     return users.stream();
   }
+  
   public User findUserByUserName(String userName) {
     CriteriaQuery<User> cr = cb.createQuery(User.class);
     Root<User> root = cr.from(User.class);
@@ -70,7 +70,6 @@ public class HibernateUserDAO implements UserDAO {
     try {
       user = tq.getSingleResult();
     } catch (NoResultException ex) {
-      // TODO: to log or not?
       return null;
     }
     return user;

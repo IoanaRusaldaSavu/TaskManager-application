@@ -36,6 +36,7 @@ public class UserTaskServiceImpl implements UserTaskService {
     User user = userDAO.findUserByUserName(userName);
     Task task = taskDAO.findTaskByTitle(title);
     if (user == null || task == null) {
+      // TODO:log
       return null;
     }
     if (!userTaskDAO.addTaskToUser(user, task)) {

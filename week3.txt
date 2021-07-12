@@ -11,3 +11,39 @@ Sarcini pentru a 3-a săptămână:
 2. Rescrieți interogările DAOlayer fără a utiliza HQL
  a. În loc de selectquery utilizați https://docs.jboss.org/hibernate/orm/3.2/api/org/hibernate/Criteria.html#list()
  încărcați toate datele din baza de date, apoi operați cu aceasta utilizând StreamAPI (https://stackify.com/streams-guide-java-8/)
+
+        pool.su
+        f.then
+        addUser b , addUser c, addTasktoUser a, addTasktoUser b, addTasktoUser b, addTasktoUser c
+        listUsers, listTasks
+        
+        
+        addUser b , addUser c ,addTasktoUser b, addTasktoUser b, addTasktoUser c
+        listUsers, addUser g, listTasks,  addTasktoUser a
+        
+        1.addUserb, addUser c, addUser g, addTasktoUser a, Task h
+        2.addTasktoUser b, h, addTasktoUser b, addTasktoUser c
+        3.istUsers, listTasks
+
+    /*    for (Operations op : level1) {
+      CompletableFuture future1 = CompletableFuture.runAsync(op, pool);
+      level1Future.add(future1);
+    }*/
+    List<CompletableFuture> level1Future =
+        level1
+            .stream()
+            .map(op -> CompletableFuture.runAsync(op, pool))
+            .collect(Collectors.toList());
+
+
+
+week4
+aplicatie Spring Boot
+1.adaugare Spring -> serviciu web
+
+
+
+
+
+
+

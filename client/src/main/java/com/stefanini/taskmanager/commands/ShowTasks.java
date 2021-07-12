@@ -13,6 +13,7 @@ import com.stefanini.taskmanager.service.TaskService;
 public class ShowTasks implements Operations {
   private static final Logger logger = LogManager.getLogger(ShowTasks.class);
   private TaskService taskService = ServiceFactory.getTaskService();
+  private static final String name = "showTasks";
 
   @Override
   public void execute() {
@@ -22,5 +23,11 @@ public class ShowTasks implements Operations {
     } else {
       logger.error("Error or no task added");
     }
+  }
+
+
+
+  public String getName() {
+    return name;
   }
 }

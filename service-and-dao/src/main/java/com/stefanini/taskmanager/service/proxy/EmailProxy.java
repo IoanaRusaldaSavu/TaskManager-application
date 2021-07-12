@@ -8,7 +8,7 @@ import com.stefanini.taskmanager.dto.annotations.EmailField;
 import com.stefanini.taskmanager.dto.annotations.EmailGenerator;
 
 public class EmailProxy implements java.lang.reflect.InvocationHandler {
-  private Object obj;
+  private final Object obj;
 
   public static Object newInstance(Object obj) {
     return java.lang.reflect.Proxy.newProxyInstance(
