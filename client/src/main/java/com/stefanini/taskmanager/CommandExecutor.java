@@ -3,9 +3,13 @@ package com.stefanini.taskmanager;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.stefanini.taskmanager.applicationLogic.strategy.ExecutionStrategy;
+import com.stefanini.taskmanager.applicationLogic.strategy.ParallelExecution;
+
 public class CommandExecutor {
   private List<Operations> operations = new ArrayList<Operations>();
   private static CommandExecutor executor;
+ 
 
   private CommandExecutor() {}
 
@@ -21,10 +25,8 @@ public class CommandExecutor {
   public void removeOperation(Operations op) {
     operations.remove(op);
   }
-
   public void execute() {
-    for (Operations op : operations) {
-      op.execute();
-    }
+    ExecutionStrategy executionStrategy = new ParallelExecution();
+    executionStrategy.execute(operations);
   }
 }

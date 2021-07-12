@@ -25,11 +25,13 @@ public class TransactionProxy implements java.lang.reflect.InvocationHandler {
     Object result;
     EntityTransaction et = null;
     try {
-      EntityManager em = HibernateConfig.getInstanceEntityManager();
+    	 EntityManager em = HibernateConfig.getInstanceEntityManager();
+      synchronized (em) {
       et = em.getTransaction();
       et.begin();
       result = m.invoke(obj, args);
       et.commit();
+      }
     } catch (InvocationTargetException e) {
       throw e.getTargetException();
     } catch (Exception e) {

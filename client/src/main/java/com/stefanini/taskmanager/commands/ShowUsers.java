@@ -13,7 +13,7 @@ import com.stefanini.taskmanager.service.UserService;
 public class ShowUsers implements Operations {
   private static final Logger logger = LogManager.getLogger(ShowUsers.class);
   private UserService userService = ServiceFactory.getUserService();
-  
+  private static final String name = "showUsers";
 
   @Override
   public void execute() {
@@ -23,5 +23,11 @@ public class ShowUsers implements Operations {
     } else {
       logger.error("Error or no users added");
     }
+  }
+
+ 
+
+  public String getName() {
+    return name;
   }
 }

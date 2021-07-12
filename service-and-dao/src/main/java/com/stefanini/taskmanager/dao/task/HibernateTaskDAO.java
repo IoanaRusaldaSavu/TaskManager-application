@@ -14,7 +14,6 @@ import javax.persistence.criteria.Root;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.stefanini.taskmanager.config.CriteriaConfig;
 import com.stefanini.taskmanager.config.HibernateConfig;
 import com.stefanini.taskmanager.dao.TaskDAO;
 import com.stefanini.taskmanager.dto.Task;
@@ -24,8 +23,6 @@ public class HibernateTaskDAO implements TaskDAO {
   private static HibernateTaskDAO hibernateTaskDAO;
   private EntityManager em = HibernateConfig.getInstanceEntityManager();
   private CriteriaBuilder cb = em.getCriteriaBuilder();
-
-  private CriteriaConfig criteria = new CriteriaConfig(em.getCriteriaBuilder(), Task.class);
 
   private HibernateTaskDAO() {}
 
@@ -40,7 +37,6 @@ public class HibernateTaskDAO implements TaskDAO {
       logger.error("Task already exists");
       return null;
     }
-    EntityManager em = HibernateConfig.getInstanceEntityManager();
     em.persist(task);
     return task;
   }
@@ -56,6 +52,7 @@ public class HibernateTaskDAO implements TaskDAO {
     try {
       tasks = tq.getResultList();
     } catch (NoResultException ex) {
+      // TODO:test
       logger.error(ex);
     }
     return tasks.stream();
